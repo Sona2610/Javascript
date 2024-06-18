@@ -1,3 +1,4 @@
+//Addition of Two Numbers
 <input id="num1" value="52">
 <input id="num2" value="34">
 <button onclick="results()">
@@ -69,6 +70,7 @@
 
 </script>
 
+//Real-time Input Update
 
   <input id="inputbox">
 <button onclick="update()">btn</button>
@@ -94,25 +96,18 @@
     }
 
 </script>
+//Add Element to a List
 
-
-
-          <button onclick="update()"> Add</button>
-<div id="result">
-
-</div>
+<button onclick="update()"> Add</button>
+<div id="result"></div>
 <script>
     var result=document.getElementById("result")
     function update(){
         var listitem=document.createElement("h1")
         listitem.textContent="Sona"
         result.append(listitem)
-
-
     }
 </script>
-
-
 <button  id = "change" onclick="update()">change color</button>
 <script>
     var change=document.getElementById("change")
@@ -121,7 +116,6 @@
         change.style.backgroundColor="red"
     }
 </script>
-
 <h1 id="names">Name</h1>
 <button  id="john" onclick="update(event)">John</button>
 
@@ -133,9 +127,7 @@
   //  var hari=document.getElementById("hari")
   //  var praveen=document.getElementById("praveen")
     function update(event){
-        names.textContent=event.target.textContent
-       
-          
+        names.textContent=event.target.textContent          
     }
 </script>
 
